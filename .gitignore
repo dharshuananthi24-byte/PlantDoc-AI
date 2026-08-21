@@ -1,0 +1,32 @@
+# Environment
+.env
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Model (large binary — use Git LFS or share separately)
+model/plant_disease_model.h5
+model/class_names.json
+model/training_history.png
+
+# Dataset — the small sample set under dataset/ is intentionally tracked.
+# If you replace it with the full PlantVillage download (~2GB, thousands
+# of images per class), uncomment the line below first:
+# dataset/
+
+# Uploads (user-generated)
+static/uploads/*
+!static/uploads/.gitkeep
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/

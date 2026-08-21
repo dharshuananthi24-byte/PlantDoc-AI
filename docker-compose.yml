@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  plantdoc-ai:
+    build: .
+    ports:
+      - "5000:5000"
+    env_file:
+      - .env
+    volumes:
+      - ./plantdoc_users.db:/app/plantdoc_users.db
+      - ./logs:/app/logs
+      - ./static/uploads:/app/static/uploads
+    restart: unless-stopped

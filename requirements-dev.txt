@@ -1,0 +1,4 @@
+# Development / testing dependencies only.
+# Production requirements.txt is left exactly as-is.
+-r requirements.txt
+pytest==8.2.0
